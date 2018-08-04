@@ -1,44 +1,61 @@
-#quote-box {
-  width: 50%;
-  margin: 50px auto;
-  border: solid #4e9caf 4px;
-  padding: 25px;
+@media (min-width: 320px) {
+  #quote-box {
+    margin: 50px 0;
+    border: solid #4e9caf 4px;
+    padding: 5px;
+  }
+
+  #text {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  #author {
+    text-align: right;
+    font-size: 1rem;
+  }
+  #author:before {
+    content: "- ";
+  }
+
+  #tweet-quote {
+    height: 50px;
+    background: #4e9caf;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  #new-quote {
+    height: 37px;
+    background: #4e9caf;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+  }
+  section {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
-#text {
-  margin: 0;
-  font-size: 1.25rem;
-}
+@media (min-width: 1024px) {
+  #quote-box {
+    width: 50%;
+    margin: 50px auto;
+    padding: 25px;
+  }
 
-#author {
-  text-align: right;
-  font-size: 1.25rem;
-}
-#author:before {
-  content: "- ";
-}
+  #text {
+    font-size: 1.25rem;
+  }
 
-#tweet-quote {
-  height: 50px;
-  background: #4e9caf;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-#new-quote {
-  height: 37px;
-  background: #4e9caf;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  border: none;
-  margin: 0 10px;
-}
-section {
-  margin: 0 auto;
-  text-align: center;
+  #author {
+    font-size: 1.25rem;
+  }
 }
